@@ -18,6 +18,13 @@
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --transition-speed: 0.3s ease;
 }
+/* Basic animation for hover effects in buttons */
+.btn-book, .search-bar button, .sort-options button {
+    transition:1s background-color var(--transition-speed), transform var(--transition-speed);
+}
+.btn-book:hover, .search-bar button:hover, .sort-options button:hover {
+    transform: translateY(-5px);
+}
 #top{
     position: fixed;
     z-index: 600;
@@ -90,7 +97,7 @@ header .container {
 .logo h1 a:hover {
     color: var(--white-color);
 }
-nav ul {
+header nav ul {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -98,24 +105,24 @@ nav ul {
     gap: 1rem;
     font-size: 1.2rem;
 }
-nav ul li:last-child{
+header nav ul li:last-child{
     margin-left: 10rem;
     background-color: rgb(255, 204, 0);
     padding: 12px 25px;
     font-size: 1rem;
 }
-nav ul li:last-child:hover{
+header nav ul li:last-child:hover{
     background-color: var(--light-color);
 }
-nav ul li:last-child a{
+header nav ul li:last-child a{
     color: var(--dark-color);
 }
-nav ul li a {
+header nav ul li a {
     color: var(--white-color);
     font-weight: bold;
     position: relative;
 }
-nav ul li a::after {
+header ul li a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -129,12 +136,23 @@ nav ul li a::after {
     -ms-transition: width var(--transition-speed);
     -o-transition: width var(--transition-speed);
 }
-nav ul li a:hover{
+header nav ul li a:hover{
     color: var(--primary-color);
 }
-nav ul li a:hover::after,
-nav ul li a.active::after {
+header nav ul li a:hover::after,
+header nav ul li a.active::after {
     width: 100%;
+}
+/* Mobile Navigation Toggle */
+.menu-toggle {
+    display: none; 
+}
+
+.menu-icon {
+    display: none; 
+    font-size: 3em;
+    cursor: pointer;
+    color: #fff;
 }
 .page-section{
     display: none;
@@ -482,10 +500,10 @@ grid-row-gap: 1rem;
     -moz-transition: all var(--transition-speed);
     -ms-transition: all var(--transition-speed);
     -o-transition: all var(--transition-speed);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 
 .sort-options button {
@@ -538,10 +556,10 @@ grid-row-gap: 1rem;
 
 .trip-card:hover {
     transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 
 .trip-images {
@@ -864,10 +882,10 @@ img:hover{
     -moz-border-radius: var(--border-radius-md);
     -ms-border-radius: var(--border-radius-md);
     -o-border-radius: var(--border-radius-md);
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .contact-form h3{
     color: var(--accent-color);
@@ -971,7 +989,7 @@ form button:hover {
 
 .social-links a {
     font-size: 2.5em;
-    /*Largersocialicons*/color: var(--white);
+    color: var(--white);
     transition: color 0.3s ease, transform 0.2s ease;
     -webkit-transition: color 0.3s ease, transform 0.2s ease;
     -moz-transition: color 0.3s ease, transform 0.2s ease;
@@ -1001,7 +1019,7 @@ form button:hover {
 }
 .feedback-form {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto ;
     padding: 30px;
     background-color: var(--white-color);
     border-radius: var(--border-radius);
@@ -1185,136 +1203,74 @@ form button:hover {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-    .trip-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    header{
+        padding: 0.5rem 2rem;
     }
-
-    nav ul li {
-        margin-left: 15px;
-    }
-
-    .hero h2 {
-        font-size: 2.5em;
-    }
-
-    .hero p {
-        font-size: 1.1em;
-    }
-}
-
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        margin-top: 15px;
+    header nav ul {
         flex-direction: column;
         align-items: center;
+        width: 50%;
+        display: none; 
+        margin-top: 15px;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        gap: 0;
+        background-color: rgb(52,90,109);
     }
-
-    nav ul li {
-        margin: 8px 0;
+    header nav ul li:last-child{
+        margin-left: 0;
     }
-
-    .search-bar {
-        flex-direction: column;
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 2px 0;
+        background-color: var(--dark-bg);
+        border-top: 1px solid #eee;
     }
-
-    .search-bar input,
-    .search-bar button {
+    header nav ul li:hover{
+        background-color: var(--accent-color);  
+    }
+    header nav a {
+        padding: 10px 0;
+        width: 100%;
+        display: block;
+    }
+    .menu-icon {
+        display: block; 
+    }
+    
+    .menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+    .home-section,.hero,.trip-catalog,.hotels,.cars,.about-us,.contact-section,.feedback,.main-footer {
+        padding: 2rem 2rem;
+    }
+    .destination-grid,.trip-grid,.car-grid,.hotel-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .sitemap ul{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .contact-content{
+        display: block;
+    }
+    .contact-form,.contact-info,.space,.browse,.social{
         width: 100%;
     }
-
-    .sorting-filtering {
-        flex-direction: column;
-        align-items: flex-start;
+    .feedback-form{
+        margin-bottom: 2rem;
     }
-
-    .sort-options,
-    .filter-options {
-        width: 100%;
-        margin-bottom: 10px;
+    .main-footer .container nav{
+         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+        gap: 50px;
     }
-
-    .filter-options select,
-    .filter-options input {
-        width: calc(50% - 5px); /* Two items per row */
-        margin-bottom: 10px;
-    }
-
-    .filter-options input[type="date"],
-    .filter-options input[type="text"] {
-        width: calc(50% - 5px);
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    .trip-card h3 {
-        font-size: 1.5em;
-    }
-
-    .trip-card .details {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .trip-card .details span {
-        margin-bottom: 5px;
-    }
-
-    .review-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .feedback-form {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 15px;
-    }
-
-    .logo h1 {
-        font-size: 1.8em;
-    }
-
-    .hero {
-        padding: 60px 15px;
-    }
-
-    .hero h2 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    h2 {
-        font-size: 1.8em;
-    }
-
-    section {
-        padding: 40px 0;
-    }
-
-    .filter-options select,
-    .filter-options input {
-        width: 100%; /* Stack filters on very small screens */
-        margin-right: 0;
-    }
-}
-
-/* Basic animation for hover effects */
-.btn-book, .search-bar button, .sort-options button {
-    transition: background-color var(--transition-speed), transform var(--transition-speed);
-}
-.btn-book:hover, .search-bar button:hover, .sort-options button:hover {
-    transform: translateY(-2px);
+    
 }
