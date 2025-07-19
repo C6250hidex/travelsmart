@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelSmart - Your Ultimate Travel Companion</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#home">TravelSmart</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trip-catalog">Trip</a></li>
+                    <li><a href="#hotel">Hotel</a></li>
+                    <li><a href="#car">Cars</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="./login.html">Signin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <a href="#" id="top"> >>> </a>
+    <main>
+        <section id="home" class="active   page-section">
+            <div class="container">
+                <div class="hero">
+                    <h2>Explore the World with TravelSmart,<span>one Trip at a Time</span></h2>
+                    <p>Your ultimate guide to unforgettable adventures and seamless travel experiences.</p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search destinations, tours, or activities...">
+                        <button type="button">Search</button>
+                    </div>
+                </div>
+                <article class="destinations-section home-section">
+                    <h2 class="section-title">Popular Destinations</h2>
+                    <div class="destination-grid">
+                        <div class="destination-card">
+                            <img src="./image/Paris, France 1.jpg" alt="Paris">
+                            <h3>Paris, France</h3>
+                            <p>The City of Love, art, and exquisite cuisine.</p>
+                        </div>
+                        <div class="destination-card">
+                            <img src="./image/Kyoto, Japan1.jpg" alt="Kyoto">
+                            <h3>Kyoto, Japan</h3>
+                            <p>Ancient temples, serene gardens, and geisha districts.</p>
+                        </div>
+                        <div class="destination-card">
+                            <img src="./image/Machu Picchu, Peru1.jpg" alt="Machu Picchu">
+                            <h3>Machu Picchu, Peru</h3>
+                            <p>Lost city of the Incas, a truly mystical experience.</p>
+                        </div>
+                        <div class="destination-card">
+                            <img src="./image/Bora Bora, French Polynesia1.jpg" alt="Bora Bora">
+                            <h3>Bora Bora, French Polynesia</h3>
+                            <p>Turquoise waters, luxury resorts, and stunning coral reefs.</p>
+                        </div>
+                        <div class="destination-card">
+                            <img src="./image/Tokyo, Japan1.jpg" alt="Tokyo Cityscape at Night">
+                            <h3>Tokyo, Japan</h3>
+                            <p>Dive into the vibrant heart of innovation and tradition! Explore neon-lit districts, serene temples.</p>
+                        </div>
+                        <div class="destination-card">
+                            <img src="./image/Machu Picchu, Peru2.jpg"
+                            alt="Ancient Inca City of Machu Picchu">
+                            <h3>Machu Picchu, Peru</h3>
+                            <p>Ascend to the lost city of the Incas, a breathtaking citadel nestled high in the Andes.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="home-section">
+                    <h2 class="section-title">Recent Gallery</h2>
+                    <div class="parent">
+                        <div class="div1">
+                            <img src="./image/mackinac-island-3563821_640.jpg" alt="" width="300">
+                        </div>
+                        <div class="div2"><img src="./image/Paris, France2.jpg" alt="" width="300"> </div>
+                        <div class="div3"><img src="./image/nigeria.jpg" width="300" alt=""> </div>
+                        <div class="div4"><img src="./image/Kyoto, Japan2.jpg" width="500" alt=""> </div>
+                        <div class="div5"> <img src="./image/Tokyo, Japan2.jpg" width="300" alt=""></div>
+                        <div class="div6"><img src="./image/Bora Bora, French Polynesia3.jpg" width="300" alt=""> </div>
+                        <div class="div7"><img src="./image/china2.jpg" width="300" alt=""> </div>
+                        <div class="div8"><img src="./image/uk1.jpg" width="300" alt=""> </div>
+                    </div>
+                </article>
+                <article class="home-section">
+                    <h2 class="section-title">Website Sitemap</h2>
+                    <div class="sitemap">
+                        <ul>
+                            <li><a href="#home">Home</a> - Home (TravelSmart Overview)</li>
+                            <li><a href="#destination">Polular Destination</a> - Browse our curated Destination catalog</li>
+                            <li><a href="#trip-catalog">Trip</a> - Explore various Trip Catalog</li>
+                            <li><a href="#Gallery">Gallery</a> - View places you love to Go</li>
+                            <li><a href="#about">About Us</a> - Learn more about TravelSmart</li>
+                            <li><a href="#services">Our Services</a> - What we offer</li>
+                            <li><a href="#contact">Contact Us</a> - Get in touch with us</li>
+                            <li><a href="#feedback">Feedback</a> - Share your thoughts with us</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="trip-catalog" class="trip-catalog page-section">
+            <div class="container">
+                <h2 class="section-title">Our Exciting Trip Catalog</h2>
+        
+                <div class="sorting-filtering">
+                    <div class="sort-options">
+                        <span>Sort by:</span>
+                        <button class="sort-btn active">Popularity</button>
+                        <button class="sort-btn">Price</button>
+                        <button class="sort-btn">Alphabetical</button>
+                    </div>
+                    <div class="filter-options">
+                        <span>Filter by:</span>
+                        <select>
+                            <option value="">Destination Type</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="relax">Relaxation</option>
+                            <option value="culture">Cultural</option>
+                        </select>
+                        <input type="date">
+                        <input type="text" placeholder="Price Range (e.g., $500-$1000)">
+                    </div>
+                </div>
+        
+                <div class="trip-grid">
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/Bali Adventure Getaway1.jpg" alt="Bali Beach" class="main-image">
+                        </div>
+                        <h3>Bali Adventure Getaway</h3>
+                        <p class="description">Experience the vibrant culture and stunning natural beauty of Bali with
+                            this 7-day adventure package.</p>
+                        <div class="details">
+                            <span class="price">$1200</span>
+                            <span class="duration">7 Days / 6 Nights</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/Arctic Lights Expedition2.jpg" alt="Northern Lights" class="main-image">
+                        </div>
+                        <h3>Arctic Lights Expedition</h3>
+                         <p class="description">Embark on a magical journey to the Arctic Circle to witness the breathtaking Northern Lights and explore icy landscapes like never before.</p>
+                        <div class="details">
+                            <span class="price">$2,450</span>
+                            <span class="duration">5 Days / 4 Nights</span>
+                            <span class="rating">★★★★☆</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Reserve Spot</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/Arctic Lights Expedition1.jpg" alt="Alps Skiing" class="main-image">
+                        </div>
+                        <h3>Swiss Alps Skiing Adventure</h3>
+                        <p class="description">Hit the slopes in the breathtaking Swiss Alps with this 5-day winter
+                            sports package.</p>
+                        <div class="details">
+                            <span class="price">$1800</span>
+                            <span class="duration">5 Days / 4 Nights</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+        
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/Machu Picchu, Peru6.jpg" alt="Amazon Rainforest" class="main-image">
+                        </div>
+                        <h3>Amazon Rainforest Discovery Tour</h3>
+                        <p class="description">Immerse yourself in the world's largest rainforest with this educational
+                            and adventurous 6-day tour.</p>
+                        <div class="details">
+                            <span class="price">$950</span>
+                            <span class="duration">6 Days / 5 Nights</span>
+                            <span class="rating">★★★★☆</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/Kyoto, Japan4.jpg"
+                                alt="Lush Green Forest Landscape" class="main-image">
+                        </div>
+                        <h3>Sequoia National Park: Serenity & Stargazing</h3>
+                        <p class="description">Escape to the majestic giants of Sequoia National Park. This 4-day retreat offers
+                            breathtaking hikes, tranquil lake activities, and unparalleled stargazing beneath ancient trees.</p>
+                        <div class="details">
+                            <span class="price">$850</span>
+                            <span class="duration">4 Days / 3 Nights</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/nigeria2.jpg" alt="Ofala Festival in Onitsha"
+                                class="main-image">
+                        </div>
+                        <h3>Experience the Grandeur of Ofala Festival in Onitsha</h3>
+                        <p class="description">Witness the vibrant and spectacular Ofala Festival, a celebration of culture, tradition, and
+                            royal heritage in Onitsha. Immerse yourself in the rich tapestry of Igbo traditions.</p>
+                        <div class="details">
+                            <span class="price">₦7,500</span>
+                            <span class="duration">2 Days</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/Machu Picchu, Peru3.jpg"
+                                alt="Elephants in Yankari National Park" class="main-image">
+                        </div>
+                        <h3>Explore the Wilds of Yankari National Park</h3>
+                        <p class="description">Embark on an unforgettable safari adventure in Yankari National Park, home to diverse
+                            wildlife, including elephants, lions, and various bird species. Discover the beauty of Nigerian nature.</p>
+                        <div class="details">
+                            <span class="price">₦15,000</span>
+                            <span class="duration">3 Days / 2 Nights</span>
+                            <span class="rating">★★★★☆</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/Bora Bora, French Polynesia3.jpg" alt="Swiss Alps View" class="main-image">
+                        </div>
+                        <h3>Swiss Alps Escape</h3>
+                        <p class="description">Enjoy a luxurious alpine retreat with snow-capped peaks, gourmet dining, and serene mountain hikes in Switzerland.</p>
+                        <div class="details">
+                            <span class="price">$3,150</span>
+                            <span class="duration">6 Days / 5 Nights</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Start Journey</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/japan-forest-6898674_640.jpg" alt="Sahara Desert" class="main-image">
+                        </div>
+                        <h3>Sahara Desert Safari</h3>
+                        <p class="description">Ride camels over golden dunes, sleep under the stars, and explore the magic of the Moroccan desert with expert guides.</p>
+                        <div class="details">
+                            <span class="price">$980</span>
+                            <span class="duration">4 Days / 3 Nights</span>
+                            <span class="rating">★★★★☆</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Adventure</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/paris-river-4275721_640.jpg" alt="Tokyo City" class="main-image">
+                        </div>
+                        <h3>Tokyo Tech & Culture Tour</h3>
+                        <p class="description">Dive into Tokyo’s futuristic vibes, ancient temples, and culinary wonders in this dynamic blend of tech and tradition.</p>
+                        <div class="details">
+                            <span class="price">$1,875</span>
+                            <span class="duration">5 Days / 4 Nights</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Explore Tokyo</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/peru-bridge-4441037_1280.jpg" alt="Rocky Mountains" class="main-image">
+                        </div>
+                        <h3>Canadian Rockies Hiking Camp</h3>
+                        <p class="description">Trek through scenic trails, pristine lakes, and wildlife-rich forests in this outdoor adventure for nature lovers.</p>
+                        <div class="details">
+                            <span class="price">$1,150</span>
+                            <span class="duration">7 Days / 6 Nights</span>
+                            <span class="rating">★★★★☆</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Join the Trek</button></a>
+                    </div>
+                    <div class="trip-card">
+                        <div class="trip-images">
+                            <img src="./image/peru-hallstatt-3609863_640.jpg" alt="Greek Islands" class="main-image">
+                        </div>
+                        <h3>Greek Island Hopping</h3>
+                        <p class="description">Sail across the sparkling Aegean Sea and explore the charm of Santorini, Mykonos, and more in a relaxing island cruise.</p>
+                        <div class="details">
+                            <span class="price">$2,200</span>
+                            <span class="duration">8 Days / 7 Nights</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Sail Away</button></a>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section id="hotel" class="hotels  page-section">
+            <h2 class="section-title">Our Exciting Hotel Catalogs</h2>
+           <div class="container">
+                <div class="hotel-grid">
+                    <div class="hotel-card">
+                        <img src="./image/hotel-2975824_640.jpg" alt="Ocean View Hotel">
+                        <h3>Ocean View Resort</h3>
+                        <p>Relax in this luxury beachfront hotel with sea-facing suites, spa, and infinity pool.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$220/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/hotel-6932136_640.jpg" alt="Mountain Lodge">
+                        <h3>Highland Mountain Lodge</h3>
+                        <p>Cozy alpine lodge surrounded by stunning peaks, perfect for hiking and skiing.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★★</span>
+                            <span class="hotel-price">$180/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/hotel-7540353_640.jpg" alt="City Center Hotel">
+                        <h3>Urban Central Hotel</h3>
+                        <p>Modern business-class hotel located in the heart of the city with fast Wi-Fi and rooftop bar.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★☆☆</span>
+                            <span class="hotel-price">$140/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/hotel-building-6950972_640.jpg" alt="Desert Mirage Inn">
+                        <h3>Desert Mirage Inn</h3>
+                        <p>Experience tranquil luxury in a remote desert oasis with private pools and panoramic dunes.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$210/night</span>
+                        </div>
+                       <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/jumeirah-beach-hotel-2146761_640.jpg" alt="Evergreen Peak Lodge">
+                        <h3>Evergreen Peak Lodge</h3>
+                        <p>Surrounded by forest trails, this rustic mountain lodge is ideal for nature lovers and hikers.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★★</span>
+                            <span class="hotel-price">$165/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/grimsel-hospiz-4970076_640.jpg" alt="Palm Breeze Resort">
+                        <h3>Palm Breeze Resort</h3>
+                        <p>Chill by the turquoise ocean with all-inclusive beachside service, spa, and tropical cocktails.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★★</span>
+                            <span class="hotel-price">$275/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/hong-kong-4046913_640.jpg" alt="Heritage Palace Hotel">
+                        <h3>Heritage Palace Hotel</h3>
+                        <p>Stay in a restored royal mansion with traditional architecture, fine dining, and cultural shows.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$190/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/architecture-1218850_640.jpg" alt="Skyline Executive Suites">
+                        <h3>Skyline Executive Suites</h3>
+                        <p>Elegant high-rise accommodations with skyline views, business lounge, and 24/7 concierge.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$300/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/architecture-2587720_640.jpg" alt="Lakeside Cabin Retreat">
+                        <h3>Lakeside Cabin Retreat</h3>
+                        <p>Charming wooden cabins nestled by a quiet lake — perfect for fishing, kayaking, and campfires.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★☆☆</span>
+                            <span class="hotel-price">$115/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/Casablanca Garden Hotel.jpg" alt="Casablanca Garden Hotel">
+                        <h3>Casablanca Garden Hotel</h3>
+                        <p>Step into elegance with floral courtyards, mosaic halls, and Mediterranean-inspired rooms.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$195/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/frankfurtoder-1155362_640.jpg" alt="Aurora Ice Hotel">
+                        <h3>Aurora Ice Hotel</h3>
+                        <p>Sleep in a magical ice suite under the northern lights, with thermal gear and snow activities included.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$250/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/building-3720329_640.jpg" alt="Boho Art House">
+                        <h3>Boho Art House</h3>
+                        <p>Colorful boutique hotel with handcrafted decor, live music nights, and cozy artistic spaces.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★☆☆</span>
+                            <span class="hotel-price">$135/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                </div>
+                <!-- <button class="btn-book" onclick="showDetails('tesla')">See More </button> -->
+                <button class="btn-books" onclick="showMore(this)">See More</button>
+
+                <div id="details-tesla" class="extra-content hidden">
+                    <div class="hotel-grid">
+                        <div class="hotel-card">
+                        <img src="./image/havana-7844664_640.jpg" alt="Azure Bay Villas">
+                        <h3>Azure Bay Villas</h3>
+                        <p>Escape to crystal-clear waters and sun-drenched terraces in this private coastal villa resort.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$295/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/jumeirah-beach-hotel-2146761_640.jpg" alt="Forest Whispers Camp">
+                        <h3>Forest Whispers Camp</h3>
+                        <p>Immerse in nature’s rhythm with eco-lodging, fire pits, and stargazing domes deep in the woods.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★☆☆</span>
+                            <span class="hotel-price">$90/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/lanzarote-211041_640.jpg" alt="Metro Luxe Suites">
+                        <h3>Metro Luxe Suites</h3>
+                        <p>Sophisticated stays in downtown elegance — rooftop dining, smart rooms, and skyline views.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★★</span>
+                            <span class="hotel-price">$340/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/santorini-2090252_640.jpg" alt="Marrakech Serenity Inn">
+                        <h3>Marrakech Serenity Inn</h3>
+                        <p>A peaceful riad tucked in the old medina — with mosaic walls, lush courtyards, and mint tea vibes.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$150/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/mackinac-island-3563821_640.jpg" alt="Polar Edge Igloo Suites">
+                        <h3>Polar Edge Igloo Suites</h3>
+                        <p>Live the Arctic dream in insulated glass igloos, with aurora views and polar excursions.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★★</span>
+                            <span class="hotel-price">$420/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/israel-3148323_640.jpg" alt="Retro Carousel Motel">
+                        <h3>Retro Carousel Motel</h3>
+                        <p>Step back into the '60s with neon vibes, diner breakfasts, and cozy roadside charm.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★☆☆</span>
+                            <span class="hotel-price">$75/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/build1.jpg" alt="Florentine Heritage Stay">
+                        <h3>Florentine Heritage Stay</h3>
+                        <p>Stay in a 16th-century villa with frescoed ceilings, marble halls, and old-world Italian charm.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$260/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/build2.jpg" alt="Coral Cove Escape">
+                        <h3>Coral Cove Escape</h3>
+                        <p>Sunbathe on white sands, snorkel vibrant reefs, and dine with ocean breezes at your doorstep.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★★</span>
+                            <span class="hotel-price">$310/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="./image/build3.jpg" alt="Zen Cliff Retreat">
+                        <h3>Zen Cliff Retreat</h3>
+                        <p>Elevate your soul at this cliffside sanctuary — with yoga pavilions, herbal gardens, and sound baths.</p>
+                        <div class="hotel-info">
+                            <span class="rating">★★★★☆</span>
+                            <span class="hotel-price">$230/night</span>
+                        </div>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    </div>
+                    <button class="btn-books" onclick="hideMore(this)">See Less</button>
+               </div>
+           </div>
+        </section>
+        <section id="car" class="cars page-section">
+            <h2 class="section-title">Our Exciting Car Catalogs</h2>
+            <div class="container">
+                <div class="car-grid">
+                    <div class="car-card">
+                        <img src="./image/aston-martin-2118857_640.webp" alt="Tesla Model S">
+                        <h3>Tesla Model S</h3>
+                        <p>Electric luxury sedan with autopilot, long range, and high performance.</p>
+                        <span class="car-price">$89,990</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/auto-1327801_640.jpg" alt="Ford Mustang GT">
+                        <h3>Ford Mustang GT</h3>
+                        <p>Iconic muscle car with a roaring V8 engine and aggressive styling.</p>
+                        <span class="car-price">$46,500</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/auto-2179220_640.jpg" alt="Range Rover Sport">
+                        <h3>Range Rover Sport</h3>
+                        <p>Premium SUV offering off-road capability and luxurious comfort.</p>
+                        <span class="car-price">$78,300</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/auto-8952159_640.png" alt="Ford Mustang">
+                        <h3>Ford Mustang GT</h3>
+                        <p>Iconic American muscle car with V8 power and bold styling.</p>
+                        <span class="car-price">$55,300</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/bmw-6010851_640.jpg" alt="BMW i8">
+                        <h3>BMW i8</h3>
+                        <p>Futuristic hybrid sports car blending efficiency with dynamic design.</p>
+                        <span class="car-price">$147,500</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/automobile-8634822_640.png" alt="Toyota Corolla">
+                        <h3>Toyota Corolla</h3>
+                        <p>Reliable compact sedan with great fuel economy and safety features.</p>
+                        <span class="car-price">$24,150</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/automobile-7825050_640.jpg" alt="Audi R8">
+                        <h3>Audi R8</h3>
+                        <p>High-performance supercar with sleek design and powerful V10 engine.</p>
+                        <span class="car-price">$158,900</span>
+                       <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/car-1890494_640.jpg" alt="Honda Civic">
+                        <h3>Honda Civic</h3>
+                        <p>Sporty and practical sedan with modern tech and smooth handling.</p>
+                        <span class="car-price">$23,750</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/car-4393990_640.jpg" alt="Jeep Wrangler">
+                        <h3>Jeep Wrangler</h3>
+                        <p>Off-road legend designed for adventure with rugged capability.</p>
+                        <span class="car-price">$39,995</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/car-5548242_640.jpg" alt="Mercedes S-Class">
+                        <h3>Mercedes-Benz S-Class</h3>
+                        <p>Flagship luxury sedan offering comfort, prestige, and innovation.</p>
+                        <span class="car-price">$115,000</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/car-5865989_640.jpg" alt="Chevrolet Bolt EV">
+                        <h3>Chevrolet Bolt EV</h3>
+                        <p>Affordable electric vehicle with a practical range and spacious interior.</p>
+                        <span class="car-price">$31,000</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/car-5868840_640.jpg" alt="Porsche 911 Carrera">
+                        <h3>Porsche 911 Carrera</h3>
+                        <p>Legendary sports car blending tradition with cutting-edge engineering.</p>
+                        <span class="car-price">$106,500</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/car-6761801_640.jpg" alt="Lucid Air">
+                        <h3>Lucid Air</h3>
+                        <p>Premium electric sedan with extraordinary range and futuristic tech.</p>
+                        <span class="car-price">$82,400</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/car-6779247_640.jpg" alt="Kia EV6">
+                        <h3>Kia EV6</h3>
+                        <p>All-electric crossover with ultra-fast charging and modern styling.</p>
+                        <span class="car-price">$48,700</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+                    <div class="car-card">
+                        <img src="./image/car-7498955_640.jpg" alt="Range Rover Velar">
+                        <h3>Range Rover Velar</h3>
+                        <p>Elegant SUV with refined design, luxury interior, and off-road power.</p>
+                        <span class="car-price">$69,900</span>
+                        <a href="#contact"><button class="btn-book">Book Now</button></a>
+                    </div>
+
+                 </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-us page-section">
+            <div class="container">
+                <h2 class="section-title">About TravelSmart</h2>
+                <p>TravelSmart is a leading online travel portal dedicated to creating unforgettable travel experiences.
+                    Founded in 2023, our mission is to connect adventurers with unique destinations and provide
+                    comprehensive, easy-to-understand travel information.</p>
+                <p>We specialize in curating exciting package tours that combine thrilling activities like paragliding
+                    and jet skiing with visits to iconic tourist attractions. Our commitment is to offer transparent
+                    pricing, reliable information, and a user-friendly platform that makes planning your next adventure
+                    a breeze.</p>
+                <p>At TravelSmart, we believe travel enriches lives, and we're passionate about helping you discover the
+                    world, one amazing trip at a time.</p>
+            </div>
+        </section>
+
+        <section class="services-section page-section" id="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid container">
+                <div class="service-card">
+                    <i class="fas fa-plane-departure icon"></i>
+                    <h3>Flight Booking</h3>
+                    <p>Find the best deals on flights worldwide.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hotel icon"></i>
+                    <h3>Hotel Reservations</h3>
+                    <p>Book your perfect stay, from budget to luxury.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-route icon"></i>
+                    <h3>Custom Tours</h3>
+                    <p>Personalized itineraries for unique experiences.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-passport icon"></i>
+                    <h3>Visa Assistance</h3>
+                    <p>Guidance and support for your visa applications.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-section page-section" id="contact">
+            <h2 class="section-title">Connect With Us & Book Your Session</h2>
+            <div class="contact-content container">
+                <form id="booking" class="contact-form">
+                    <h3>Book Your Session</h3>
+                    <div class="formgrouping">
+                        <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number (Optional):</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+234 80XXXXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Interested Service:</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="therapeutic-massage">Therapeutic Massage</option>
+                            <option value="revitalizing-facial">Revitalizing Facial</option>
+                            <option value="body-rituals">Body Rituals & Wraps</option>
+                            <option value="sauna-steam">Sauna & Steam Therapy</option>
+                            <option value="custom-package">Custom Package</option>
+                            <option value="general-inquiry">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Date (Optional):</label>
+                        <input type="date" id="preferred-date" name="preferred_date">
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="6"
+                            placeholder="Tell us about your desired experience or inquiry..." required></textarea>
+                    </div> -->
+                    </div>
+                    <h3 id="transport">Book Transportation</h3>
+                    <div class="formgrouping">
+                        <div class="form-group">
+                        <label for="transport-type">Type:</label>
+                        <select id="transport-type">
+                            <option value="flight">Flight</option>
+                            <option value="bus">Bus</option>
+                            <option value="train">Train</option>
+                            <option value="train">Water(Ship)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="departure">Departure:</label>
+                        <input type="text" id="departure" placeholder="e.g., Lagos">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination" placeholder="e.g., Abuja">
+                    </div>
+                    <div class="form-group">
+                        <label for="date-transport">Date:</label>
+                        <input type="date" id="date-transport">
+                    </div>
+                    </div>
+                    <h3 id="hotels">Book Hotels</h3>
+                     <div class="formgrouping">
+                        <div class="form-group">
+                        <label for="hotel-location">Location:</label>
+                        <input type="text" id="hotel-location" placeholder="e.g., New York">
+                    </div>
+                    <div class="form-group">
+                        <label for="check-in">Check-in:</label>
+                        <input type="date" id="check-in">
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out">Check-out:</label>
+                        <input type="date" id="check-out">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests:</label>
+                        <input type="number" id="guests" min="1" value="1">
+                    </div>
+
+                     </div>
+                <h3 id="cars">Book Cars</h3>
+                     <div class="formgrouping">
+                        <div class="form-group">
+                        <label for="car-pickup-location">Pickup Location:</label>
+                        <input type="text" id="car-pickup-location" placeholder="e.g., Airport">
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup-date">Pickup Date:</label>
+                        <input type="date" id="pickup-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="return-date">Return Date:</label>
+                        <input type="date" id="return-date">
+                    </div>
+                     </div>
+                    <button type="submit" class="btn">Send Inquiry & Request Booking</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Visit & Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Serene Haven Spa, 45 Tranquil Way, Wellness City, Onitsha,
+                        Anambra, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> +234 (0) 801 234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@serenehavenspa.com</p>
+                    <p><i class="fas fa-clock"></i> **Opening Hours:**</p>
+                    <ul>
+                        <li>Mon - Fri: 9:00 AM - 8:00 PM</li>
+                        <li>Saturday: 10:00 AM - 7:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback" class="feedback page-section">
+            <div class="container">
+                <h2 class="section-title">Share Your Feedback</h2>
+                <p class="we">We value your opinion! Please let us know how we can improve our website.</p>
+                <form class="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="names" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="emails" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="messages" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Feedback</button>
+                </form>
+                <div>
+                    <h2 class="section-title">What Our Travelers Say</h2>
+                    <div class="review-grid">
+                        <div class="review-card">
+                            <p class="review-text">"The Bali trip was absolutely incredible! TravelSmart made everything so
+                            easy, from booking to the amazing activities. Highly recommend the paragliding!"</p>
+                            <p class="reviewer-name">- Sarah L. (Bali Adventure)</p>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-card">
+                            <p class="review-text">"Skiing in the Alps was a dream come true. The accommodations were
+                            top-notch and the transport options were clearly laid out. A truly seamless experience."</p>
+                            <p class="reviewer-name">- Mark T. (Swiss Alps Expedition)</p>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-card">
+                            <p class="review-text">"An eye-opening journey into the Amazon! The guides were knowledgeable
+                                    and the jungle lodge was perfect. Four stars because the mosquitoes were a bit much, but
+                            that's nature!"</p>
+                            <p class="reviewer-name">- Jessica R. (Amazon Discovery)</p>
+                            <div class="review-rating">★★★★☆</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <nav>
+                <div class="space">
+                    <div class="logo">
+                        <h1><a href="#home">TravelSmart</a></h1>
+                    </div>
+                    <p>Explore the World with TravelSmart,<span>one Trip at a Time.</span> 
+                    Your ultimate guide to unforgettable adventures and seamless travel experiences.
+                    </p>
+                    <p></p>
+                    <details>
+                        <summary>seemore</summary>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione blanditiis eos consequatur nam ad assumenda illum enim laborum, rerum harum!</p>
+                    </details>
+                </div>
+                <div class="browse">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search destinations, tours, or activities...">
+                        <button type="button">Search</button>
+                    </div>
+                    <p>Browse our diverse Destination .</p>
+                </div>
+                <div class="social">
+                    <h2>Contact us on :</h2>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+    
+            </nav>
+    
+            <p class="reserved">&copy; 2025 Chidex Interiors. All rights reserved. <br>
+                Design and Maintain @Chidex Web</p>
+        </div>
+    </footer>
+<script>
+function showMore(button) {
+  const extraContent = button.nextElementSibling;
+  button.style.display = "none"; // Hide "See More"
+  extraContent.classList.remove("hidden"); // Show extra content
+}
+
+function hideMore(button) {
+  const extraContent = button.parentElement;
+  const seeMoreBtn = extraContent.previousElementSibling;
+  extraContent.classList.add("hidden"); // Hide extra content
+  seeMoreBtn.style.display = "inline-block"; // Show "See More" again
+}
+
+
+</script>
+
+</body>
+
+</html>
